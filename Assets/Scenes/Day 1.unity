@@ -1126,6 +1126,7 @@ Transform:
   - {fileID: 722288661}
   - {fileID: 2077323769}
   - {fileID: 1698774509}
+  - {fileID: 1191489336}
   - {fileID: 615634520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1178,6 +1179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desired_flavor: 0
   request_text: {fileID: 1221734683}
+  has_received_ice_cream: 0
 --- !u!212 &979317047
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1270,9 +1272,12 @@ MonoBehaviour:
   animator: {fileID: 979317048}
   animal: {fileID: 979317044}
   animal_sprite: {fileID: 979317047}
+  cup: {fileID: 1228844707}
+  request_text: {fileID: 1221734683}
   animal_sprites:
   - {fileID: 1075993247170539406, guid: ab885664710ff814b8eaea8459fad44d, type: 3}
   - {fileID: -5237074582503671387, guid: 36bd2d60b2e65774da1aec5263f2ed57, type: 3}
+  desired_flavors: 0100000003000000
   serve_button: {fileID: 1678021045}
   Name: Day 1 Dialogue
 --- !u!1 &1008192033
@@ -1409,6 +1414,56 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 285.40967, y: 269.04276}
   m_EdgeRadius: 0
+--- !u!1 &1191489335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191489336}
+  - component: {fileID: 1191489337}
+  m_Layer: 0
+  m_Name: UI Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1191489336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191489335}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5765378, y: 0.23191318, z: 0.17181964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963798476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191489337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191489335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb71bc0ebe154a478f0b421587f4962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  request_text: {fileID: 1221734682}
+  serve_button: {fileID: 1678021045}
+  pink_cup: {fileID: 1812451348}
+  blue_cup: {fileID: 0}
+  green_cup: {fileID: 2027429679}
+  purple_cup: {fileID: 0}
 --- !u!1 &1221734682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1476,7 @@ GameObject:
   - component: {fileID: 1221734684}
   - component: {fileID: 1221734683}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Request Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,6 +1614,7 @@ GameObject:
   - component: {fileID: 1228844703}
   - component: {fileID: 1228844704}
   - component: {fileID: 1228844706}
+  - component: {fileID: 1228844707}
   m_Layer: 0
   m_Name: cup
   m_TagString: cup
@@ -1751,6 +1807,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1228844707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228844700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95a9797a2afa54a83823e5ba5670cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1231652480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2343,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.6367924, g: 1, b: 0.8183962, a: 0.34117648}
     m_PressedColor: {r: 0.6367924, g: 1, b: 0.8183962, a: 0.34117648}
     m_SelectedColor: {r: 0.6117647, g: 0.654902, b: 0.7568628, a: 1}
-    m_DisabledColor: {r: 0.6367924, g: 1, b: 0.8183962, a: 0.34117648}
+    m_DisabledColor: {r: 0.6117647, g: 0.654902, b: 0.7568628, a: 0.34117648}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2293,19 +2361,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1678021046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 979317044}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1678021046
 MonoBehaviour:
   m_ObjectHideFlags: 0

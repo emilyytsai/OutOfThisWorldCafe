@@ -85,13 +85,17 @@ public class AnimalManager : MonoBehaviour
             }
 
             cup.reset_flavor();
+            UIManager.Instance.hide_scoop();
             is_leaving = true;
             StartCoroutine(leave_animation());
         }
     }
 
+    //animations//
+
     public IEnumerator enter_animation()
     {
+        StartCoroutine(spawn_text());
         animator.ResetTrigger("IdleTrigger");
         animator.ResetTrigger("LeaveTrigger");
         animator.SetTrigger("EnterTrigger");
@@ -102,12 +106,22 @@ public class AnimalManager : MonoBehaviour
 
     public IEnumerator leave_animation()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(2f);
         animator.SetTrigger("LeaveTrigger");
+        UIManager.Instance.hide_text();
 
         yield return new WaitForSeconds(3f);
         is_leaving = false;
 
         next_animal();
+    }
+
+
+    //for UI//
+
+    IEnumerator spawn_text()
+    {
+        yield return new WaitForSeconds(3f);
+        UIManager.Instance.show_text();
     }
 }
