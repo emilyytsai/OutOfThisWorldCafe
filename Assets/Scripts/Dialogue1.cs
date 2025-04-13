@@ -1,36 +1,47 @@
 using UnityEngine;
 using TMPro;
-using System.Collections;
 using System.Collections.Generic;
 
 public class Dialogue1 : MonoBehaviour
 {
     public TMP_Text dialogueText;
-    public float delayBetweenLines = 10f;
 
     private Queue<string> dialogueQueue;
+    private bool dialogueStarted = false;
 
     void Start()
     {
         dialogueQueue = new Queue<string>();
 
-        dialogueQueue.Enqueue("You really won the hearts of Cat and Rat!");
+        // Add dialogue lines
+        dialogueQueue.Enqueue("Dog: You really won the hearts of Cat and Rat!");
         dialogueQueue.Enqueue("You’ve unlocked: Blue Ice Cream and White Star Sprinkles!");
-        dialogueQueue.Enqueue("Wait I hear more animals coming in…");
-        dialogueQueue.Enqueue("Tropi Tripi!");
+        dialogueQueue.Enqueue("Me: Wait I hear more animals coming in…");
+        dialogueQueue.Enqueue("Cat: Tropi Tripi!");
 
-        StartCoroutine(PlayDialogue());
+        DisplayNextLine();
+        dialogueStarted = true;
     }
 
-    IEnumerator PlayDialogue()
+    void Update()
     {
-        while (dialogueQueue.Count > 0)
+        if (dialogueStarted && Input.GetMouseButtonDown(0)) // Left-click to continue
+        {
+            DisplayNextLine();
+        }
+    }
+
+    void DisplayNextLine()
+    {
+        if (dialogueQueue.Count > 0)
         {
             string line = dialogueQueue.Dequeue();
             dialogueText.text = line;
-            yield return new WaitForSeconds(delayBetweenLines);
         }
-
-        dialogueText.text = "";
+        else
+        {
+            dialogueText.text = ""; // Optional: clear text when done
+            dialogueStarted = false;
+        }
     }
 }

@@ -1,14 +1,13 @@
 using UnityEngine;
 using TMPro;
-using System.Collections;
 using System.Collections.Generic;
 
 public class Dialogue2 : MonoBehaviour
 {
     public TMP_Text dialogueText;
-    public float delayBetweenLines = 10f;
 
     private Queue<string> dialogueQueue;
+    private bool dialogueStarted = false;
 
     void Start()
     {
@@ -16,21 +15,32 @@ public class Dialogue2 : MonoBehaviour
 
         dialogueQueue.Enqueue("Dog: Bunny is jumping for joy for his ice cream!");
         dialogueQueue.Enqueue("You’ve unlocked Purple Ice Cream and Sun Candy Toppers!");
-        dialogueQueue.Enqueue("Woof, We’re so hungry, help us get our treats so we can go home!");
+        dialogueQueue.Enqueue("Dog: Woof, We’re so hungry, help us get our treats so we can go home!");
         dialogueQueue.Enqueue("The Pidges need more dessert.");
 
-        StartCoroutine(PlayDialogue());
+        DisplayNextLine();
+        dialogueStarted = true;
     }
 
-    IEnumerator PlayDialogue()
+    void Update()
     {
-        while (dialogueQueue.Count > 0)
+        if (dialogueStarted && Input.GetMouseButtonDown(0))
+        {
+            DisplayNextLine();
+        }
+    }
+
+    void DisplayNextLine()
+    {
+        if (dialogueQueue.Count > 0)
         {
             string line = dialogueQueue.Dequeue();
             dialogueText.text = line;
-            yield return new WaitForSeconds(delayBetweenLines);
         }
-
-        dialogueText.text = "";
+        else
+        {
+            dialogueText.text = "";
+            dialogueStarted = false;
+        }
     }
 }

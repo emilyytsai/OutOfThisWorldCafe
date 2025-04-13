@@ -1,39 +1,45 @@
-using UnityEngine;
-using TMPro;
-using System.Collections;
-using System.Collections.Generic;
+    using UnityEngine;
+    using TMPro;
+    using System.Collections.Generic;
 
-public class Dialogue3 : MonoBehaviour
-{
-    public TMP_Text dialogueText;
-    public float delayBetweenLines = 10f;
-
-    private Queue<string> dialogueQueue;
-
-    void Start()
+    public class Dialogue3 : MonoBehaviour
     {
-        dialogueQueue = new Queue<string>();
+        public TMP_Text dialogueText;
 
-        dialogueQueue.Enqueue("Dog: Hurruff! you served the pidges!");
-        dialogueQueue.Enqueue("Rat: Ratatata!");
-        dialogueQueue.Enqueue("Dog: Woof, time to go home! Thanks for helping us Ice Creamer!");
-        delayBetweenLines = 20f;
-        dialogueQueue.Enqueue("And the Pidges went home satisfied, and they were happy with the best ice cream in the galaxy.");
-        delayBetweenLines = 10f;
-        dialogueQueue.Enqueue("Capybara: “We’re coming back here for sure!”");
+        private Queue<string> dialogueQueue;
+        private bool dialogueStarted = false;
 
-        StartCoroutine(PlayDialogue());
-    }
-
-    IEnumerator PlayDialogue()
-    {
-        while (dialogueQueue.Count > 0)
+        void Start()
         {
-            string line = dialogueQueue.Dequeue();
-            dialogueText.text = line;
-            yield return new WaitForSeconds(delayBetweenLines);
+            dialogueQueue = new Queue<string>();
+
+            dialogueQueue.Enqueue("Dog: Hurruff! you served the pidges!");
+            dialogueQueue.Enqueue("Rat: Ratatata!");
+            dialogueQueue.Enqueue("Dog: Woof, time to go home! Thanks for helping us Ice Creamer!");
+
+            DisplayNextLine();
+            dialogueStarted = true;
         }
 
-        dialogueText.text = "";
+        void Update()
+        {
+            if (dialogueStarted && Input.GetMouseButtonDown(0))
+            {
+                DisplayNextLine();
+            }
+        }
+
+        void DisplayNextLine()
+        {
+            if (dialogueQueue.Count > 0)
+            {
+                string line = dialogueQueue.Dequeue();
+                dialogueText.text = line;
+            }
+            else
+            {
+                dialogueText.text = "";
+                dialogueStarted = false;
+            }
+        }
     }
-}
