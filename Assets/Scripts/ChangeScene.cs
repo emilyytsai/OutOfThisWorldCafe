@@ -6,6 +6,14 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField]
     private string Name; //scene name
+    [SerializeField]
+    private AudioManager audio_manager;
+
+    private void Start()
+    {
+        // Find the AudioManager in the scene.
+        audio_manager = FindAnyObjectByType<AudioManager>();
+    }
 
     public void change_scene()
     {
