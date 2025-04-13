@@ -968,9 +968,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Main Menu & Intro Dialogue
+    clip: {fileID: 8300000, guid: 349cbe80902691843adff3effcf43f87, type: 3}
+    mixer_group: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   persistentGroupA:
   - Main Menu
-  - Dialogue 1
+  - Intro Dialogue
   persistentGroupB:
   - Day 1
   - Day 2
