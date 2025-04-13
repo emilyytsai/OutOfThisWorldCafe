@@ -15,15 +15,22 @@ public class Dialogue1 : MonoBehaviour
     [SerializeField]
     private GameObject continue_text = null;
 
+    [SerializeField]
+    private GameObject ice_cream1 = null;
+    [SerializeField]
+    private GameObject ice_cream2 = null;
+    [SerializeField]
+    private GameObject dog = null;
+
     void Start()
     {
         dialogueQueue = new Queue<string>();
 
         // Add dialogue lines
-        dialogueQueue.Enqueue("Dog: You really won the hearts of Cat and Rat!");
-        dialogueQueue.Enqueue("You’ve unlocked: Blue Ice Cream and White Star Sprinkles!");
+        dialogueQueue.Enqueue("Dog: Nice job! Cat and Rat enjoyed visiting your ice cream cafe.");
+        dialogueQueue.Enqueue("You’ve unlocked: Blue Giant Blueberry Ice Cream and White Star Sprinkles!");
         dialogueQueue.Enqueue("Me: Wait I hear more animals coming in…");
-        dialogueQueue.Enqueue("Cat: Tropi Tripi!");
+        dialogueQueue.Enqueue("Dog: My turn to get some ice cream! Woof.");
 
         DisplayNextLine();
         dialogueStarted = true;
@@ -44,12 +51,26 @@ public class Dialogue1 : MonoBehaviour
         {
             string line = dialogueQueue.Dequeue();
             dialogueText.text = line;
+            if (line.Contains("unlocked"))
+            {
+                ice_cream1.SetActive(true);
+                ice_cream2.SetActive(true);
+                dog.SetActive(false);
+            }
+            else
+            {
+                ice_cream1.SetActive(false);
+                ice_cream2.SetActive(false);
+            }
         }
         else
         {
             continue_button.SetActive(true);
             continue_text.SetActive(false);
             dialogueStarted = false;
+            ice_cream1.SetActive(false);
+            ice_cream2.SetActive(false);
+            dog.SetActive(true);
         }
     }
 }
