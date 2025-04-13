@@ -101,6 +101,12 @@ public class InputHandler : MonoBehaviour
             string scoop_name = scoop.name; //get the name of the scoop
             Debug.Log($"Added {scoop.name} to the cup!");
             trigger_scoop_sprite(scoop_name); //add the sprite that looks like the scoops are actaully in the cup
+
+            Cup cup_script = cup.GetComponent<Cup>();
+            if (cup_script != null)
+            {
+                cup_script.SetFlavor(scoop_name);
+            }
         }
     }
 
