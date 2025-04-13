@@ -975,12 +975,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Restaurant Music
+    clip: {fileID: 8300000, guid: 59b6b29eb7f207f4795a655899b10c28, type: 3}
+    mixer_group: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   persistentGroupA:
   - Main Menu
   - Intro Dialogue
-  persistentGroupB:
-  - Day 1
-  - Day 2
 --- !u!1 &1366525341
 GameObject:
   m_ObjectHideFlags: 0
