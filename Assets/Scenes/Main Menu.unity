@@ -394,7 +394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b7ae34528d8b6346b6988c79b769eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Credits
+  audio_manager: {fileID: 0}
 --- !u!114 &611334352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,6 +909,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1240946019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240946020}
+  - component: {fileID: 1240946021}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240946020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240946019}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0499869, y: -0.9418352, z: 118.505035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240946021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240946019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa092f655c1788549a535099c57984af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Button Click
+    clip: {fileID: 8300000, guid: 253f99472857be44e870092cbc28c673, type: 3}
+    mixer_group: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  persistentGroupA:
+  - Main Menu
+  - Dialogue 1
+  persistentGroupB:
+  - Day 1
+  - Day 2
 --- !u!1 &1366525341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +1523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
+  audio_manager: {fileID: 0}
 --- !u!114 &2107544623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,6 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
+  audio_manager: {fileID: 0}
 --- !u!114 &2134365286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1712,3 +1773,4 @@ SceneRoots:
   - {fileID: 739080108}
   - {fileID: 758509372}
   - {fileID: 1980130568}
+  - {fileID: 1240946020}
