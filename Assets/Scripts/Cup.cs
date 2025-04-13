@@ -30,7 +30,6 @@ public class Cup : MonoBehaviour
                 current_flavor = Flavor.galactic_grape;
                 break;
             default:
-                current_flavor = Flavor.None;
                 break;
         }
     }

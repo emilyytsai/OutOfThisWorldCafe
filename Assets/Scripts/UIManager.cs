@@ -16,6 +16,9 @@ public class UIManager : MonoBehaviour
     public GameObject blue_cup = null;
     public GameObject green_cup = null;
     public GameObject purple_cup = null;
+    public GameObject rainbow = null;
+    public GameObject white = null;
+    public GameObject candies = null;
 
     private void Awake()
     {
@@ -56,6 +59,10 @@ public class UIManager : MonoBehaviour
         if (blue_cup != null) blue_cup.SetActive(false);
         if (green_cup != null) green_cup.SetActive(false);
         if (purple_cup != null) purple_cup.SetActive(false);
+        if (rainbow != null) rainbow.SetActive(false);
+        if (white != null) white.SetActive(false);
+        if (candies != null) candies.SetActive(false);
+
         serve_button.interactable = false;
     }
 }
