@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      left_curtain_0: 9087482442826224499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,8 +9,13 @@ public class ChangeScene : MonoBehaviour
 
     public void change_scene()
     {
-        //click_sound(); //NOTE** uncomment this later
+        click_sound();
         SceneManager.LoadScene(Name);
+    }
+
+    public void click_sound()
+    {
+        audio_manager.Play("Button Click");
     }
 
     public void quit_game() 
