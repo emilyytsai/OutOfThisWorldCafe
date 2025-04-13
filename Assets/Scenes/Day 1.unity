@@ -626,7 +626,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -8661792252164842659, guid: 73622e8f72ad3cc459b7c5998617cbaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1178,9 +1178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c00ded8c6f27146a01e01938dfd51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desired_flavor: 0
-  request_text: {fileID: 1221734683}
-  has_received_ice_cream: 0
 --- !u!212 &979317047
 SpriteRenderer:
   m_ObjectHideFlags: 0

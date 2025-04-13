@@ -840,7 +840,7 @@ MonoBehaviour:
   - {fileID: 7935234321397735378, guid: 944a750eab41d1e48b27b1e58fea652b, type: 3}
   desired_flavors: 020000000300000001000000
   serve_button: {fileID: 107548008}
-  Name: Day 1 Dialogue
+  Name: Day 2 Dialogue
 --- !u!95 &331833059
 Animator:
   serializedVersion: 7

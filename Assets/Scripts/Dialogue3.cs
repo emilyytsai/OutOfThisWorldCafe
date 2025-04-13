@@ -22,6 +22,8 @@
             dialogueQueue.Enqueue("Dog: Hurruff! you served the pidges!");
             dialogueQueue.Enqueue("Rat: Ratatata!");
             dialogueQueue.Enqueue("Dog: Woof, time to go home! Thanks for helping us Ice Creamer!");
+            dialogueQueue.Enqueue("So the Pidges went home satisfied, and they were happy with the best ice cream in the galaxy!");
+            dialogueQueue.Enqueue("Capybara: “We’re coming back here for sure!");
 
             DisplayNextLine();
             dialogueStarted = true;
