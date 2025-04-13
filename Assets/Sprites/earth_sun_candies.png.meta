@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      earth_sun_candies_0: -1298891564632374417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

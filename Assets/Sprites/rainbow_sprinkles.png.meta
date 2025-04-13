@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rainbow_sprinkles_0: -8661792252164842659
+      rainbow_sprinkles_1: 3863404933485809733
+      rainbow_sprinkles_10: 3996935066775218742
+      rainbow_sprinkles_11: -1823581935265588379
+      rainbow_sprinkles_12: -9065240943690040460
+      rainbow_sprinkles_13: 1737277017267903992
+      rainbow_sprinkles_2: 4932072248506769163
+      rainbow_sprinkles_3: -1710681728347028655
+      rainbow_sprinkles_4: -7005594272898209331
+      rainbow_sprinkles_5: 8775665999071371329
+      rainbow_sprinkles_6: 9211582655791139508
+      rainbow_sprinkles_7: 3874986459506276423
+      rainbow_sprinkles_8: -6729053594267861361
+      rainbow_sprinkles_9: 7868631420258538614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
