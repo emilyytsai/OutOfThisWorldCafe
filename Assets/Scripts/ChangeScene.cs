@@ -13,6 +13,8 @@ public class ChangeScene : MonoBehaviour
     //disable title
     public GameObject title;
 
+    public GameObject dog;
+
     // Left & Right Curtain Transition
     public RectTransform left_curtain;
     public RectTransform right_curtain;
@@ -102,6 +104,11 @@ public class ChangeScene : MonoBehaviour
         if (title != null)
         {
             title.SetActive(false);
+        }
+
+        if (dog != null)
+        {
+            dog.SetActive(false);
         }
     }
 
