@@ -1,6 +1,6 @@
 # Out of this World Cafe
 
-# Our Team
+## Our Team
 * Dianella Sy - Programmer, Audio/Transition Manager
 * Emily Tsai - Programmer, Artist, Writer
 * Lukas Lin - Programmer, Writer
