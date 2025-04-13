@@ -16,6 +16,13 @@ public class ChangeScene : MonoBehaviour
     public GameObject galaxy_glow_effect;
     public GameObject title_glow_effect;
 
+    // Left & Right Curtain Transition
+    public RectTransform left_curtain;
+    public RectTransform right_curtain;
+    public float slide_distance = 1920f;
+    public float slide_duration = 1.0f;
+
+
     private void Start()
     {
         // Find the AudioManager in the scene.
@@ -64,6 +71,32 @@ public class ChangeScene : MonoBehaviour
                      // After scaling, wait another second before changing the scene.
                      Invoke("DelayedChangeScene", 1.0f);
                  });
+    }
+
+    void InitializeCurtainsOpen() {
+        left_curtain.localPosition = new Vector3(-slide_distance, left_curtain.localPosition.y, left_curtain.localPosition.z);
+        right_curtain.localPosition = new Vector3(slide_distance, right_curtain.localPosition.y, right_curtain.localPosition.z);
+    }
+
+    public void CloseCurtains()
+    {
+        // Make sure the left and right curtains are active
+        left_curtain.gameObject.SetActive(true);
+        right_curtain.gameObject.SetActive(true);
+
+        // Animate the left curtain to move to the left
+        LeanTween.moveLocalX(left_curtain.gameObject, -1, slide_duration)
+                 .setEase(LeanTweenType.easeInOutQuad);
+
+        // Animate the right curtain to move to the right
+        LeanTween.moveLocalX(right_curtain.gameObject, 5, slide_duration)
+                 .setEase(LeanTweenType.easeInOutQuad)
+                 .setOnComplete(() =>
+                 {
+                    // After sliding, wait another second before changing the scene
+                    Invoke("DelayedChangeScene", 1.0f);
+                 });
+
     }
 
     //add a slight delay before the glow effect is stopped
