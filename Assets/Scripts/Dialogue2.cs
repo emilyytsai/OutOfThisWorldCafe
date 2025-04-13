@@ -14,10 +14,10 @@ public class SceneDialogueTMP : MonoBehaviour
     {
         dialogueQueue = new Queue<string>();
 
-        dialogueQueue.Enqueue("Woof! Hey ice creamer!");
-        dialogueQueue.Enqueue("We’re a group of animals who call themselves The Pidges. We were in the mood for some dessert, and I heard the best little ice cream place in the galaxy is located right here, on the moon!");
+        dialogueQueue.Enqueue("Bunny is jumping for joy for his ice cream!");
+        dialogueQueue.Enqueue("You’ve unlocked Purple Ice Cream and Sun Candy Toppers!");
         dialogueQueue.Enqueue("Woof, We’re so hungry, help us get our treats so we can go home!");
-        dialogueQueue.Enqueue("Serve some ice cream to the starving Pidges.");
+        dialogueQueue.Enqueue("The Pidges need more dessert.");
 
         StartCoroutine(PlayDialogue());
     }
