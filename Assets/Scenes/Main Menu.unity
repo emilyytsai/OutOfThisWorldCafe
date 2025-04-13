@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 611334354}
   - component: {fileID: 611334353}
   - component: {fileID: 611334352}
-  - component: {fileID: 611334351}
+  - component: {fileID: 611334355}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -657,26 +657,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1.44, y: -1.63}
   m_SizeDelta: {x: 418.9224, y: 124.7059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &611334351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611334349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7ae34528d8b6346b6988c79b769eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Credits
-  audio_manager: {fileID: 0}
-  fader: {fileID: 0}
-  title: {fileID: 0}
-  left_curtain: {fileID: 250922061}
-  right_curtain: {fileID: 1816036443}
-  slide_distance: 1920
-  slide_duration: 1
 --- !u!114 &611334352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,7 +701,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 611334351}
+      - m_Target: {fileID: 611334355}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: change_scene
         m_Mode: 1
@@ -733,9 +713,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 611334351}
+      - m_Target: {fileID: 611334355}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: CloseCurtains
+        m_MethodName: OpenScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -783,6 +763,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611334349}
   m_CullTransparentMesh: 1
+--- !u!114 &611334355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611334349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7ae34528d8b6346b6988c79b769eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Credits
+  audio_manager: {fileID: 0}
+  fader: {fileID: 113216315}
+  title: {fileID: 1700334989}
+  left_curtain: {fileID: 0}
+  right_curtain: {fileID: 0}
+  slide_distance: 1920
+  slide_duration: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,25 +1433,28 @@ MonoBehaviour:
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Main Menu & Intro Dialogue
     clip: {fileID: 8300000, guid: f8ed6e5848ae3c444b693b084d88eb80, type: 3}
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Restaurant Music
     clip: {fileID: 8300000, guid: 59b6b29eb7f207f4795a655899b10c28, type: 3}
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   persistentGroupA:
   - Main Menu
   - Intro Dialogue
+  - Day 1 Dialogue
+  - Day 2 Dialogue
+  - Day 3 Dialogue
 --- !u!1 &1271392340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,18 +2692,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2107544622}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: click_sound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2107544622}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: change_scene

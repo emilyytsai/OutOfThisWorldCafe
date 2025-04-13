@@ -3175,8 +3175,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 916604448}
+  - {fileID: 1941574659}
   - {fileID: 1675536671}
-  - {fileID: 1729220884}
   - {fileID: 1598659723}
   - {fileID: 323629782}
   - {fileID: 302454554}
@@ -3785,7 +3785,7 @@ Transform:
   - {fileID: 46883058}
   m_Father: {fileID: 1617714483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1729220883
+--- !u!1 &1941574658
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3793,8 +3793,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1729220884}
-  - component: {fileID: 1729220885}
+  - component: {fileID: 1941574659}
+  - component: {fileID: 1941574660}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -3802,13 +3802,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1729220884
+--- !u!4 &1941574659
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729220883}
+  m_GameObject: {fileID: 1941574658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.9474649, y: -0.8180324, z: 118.508675}
@@ -3817,13 +3817,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1617714483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1729220885
+--- !u!114 &1941574660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729220883}
+  m_GameObject: {fileID: 1941574658}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa092f655c1788549a535099c57984af, type: 3}
@@ -3842,25 +3842,28 @@ MonoBehaviour:
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Main Menu & Intro Dialogue
-    clip: {fileID: 8300000, guid: 349cbe80902691843adff3effcf43f87, type: 3}
+    clip: {fileID: 8300000, guid: f8ed6e5848ae3c444b693b084d88eb80, type: 3}
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Restaurant Music
     clip: {fileID: 8300000, guid: 59b6b29eb7f207f4795a655899b10c28, type: 3}
     mixer_group: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   persistentGroupA:
   - Main Menu
   - Intro Dialogue
+  - Day 1 Dialogue
+  - Day 2 Dialogue
+  - Day 3 Dialogue
 --- !u!1 &1990594689
 GameObject:
   m_ObjectHideFlags: 0
