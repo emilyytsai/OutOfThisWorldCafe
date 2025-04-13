@@ -17,9 +17,9 @@ public class SceneDialogueTMP : MonoBehaviour
         dialogueQueue.Enqueue("Dog: Hurruff! you served the pidges!");
         dialogueQueue.Enqueue("Rat: Ratatata!");
         dialogueQueue.Enqueue("Dog: Woof, time to go home! Thanks for helping us Ice Creamer!");
-        delayBetweenLines = 20f
+        delayBetweenLines = 20f;
         dialogueQueue.Enqueue("And the Pidges went home satisfied, and they were happy with the best ice cream in the galaxy.");
-        delayBetweenLines = 10f
+        delayBetweenLines = 10f;
         dialogueQueue.Enqueue("Capybara: “We’re coming back here for sure!”")
 
         StartCoroutine(PlayDialogue());
