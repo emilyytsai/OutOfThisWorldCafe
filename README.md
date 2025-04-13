@@ -5,5 +5,5 @@ Out of this World Cafe was made using Unity Version 6000.0.42f1
 
 # Our Team
 * Dianella Sy - Programmer, Audio/Transition Manager
-* Emily Tsai - Programmer, Artist
+* Emily Tsai - Programmer, Artist, Writer
 * Lukas Lin - Programmer, Writer
