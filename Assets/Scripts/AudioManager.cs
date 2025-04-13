@@ -12,8 +12,8 @@ public class AudioManager : MonoBehaviour
     // Group A persistent scenes: these scenes share one persistent track.
     public string[] persistentGroupA = { "Main Menu", "Intro Dialogue" };
 
-    // Group B persistent scenes: these scenes share another persistent track.
-    public string[] persistentGroupB = { "Day 1", "Day 2" };
+    // // Group B persistent scenes: these scenes share another persistent track.
+    // public string[] persistentGroupB = { "Day 1", "Day 2" };
 
     void Awake()
     {
@@ -61,14 +61,14 @@ public class AudioManager : MonoBehaviour
             }
         }
         // If the loaded scene is part of persistent Group B,
-        else if (persistentGroupB.Contains(scene.name))
-        {
-            if (!IsPlaying("Day 1 & Day 2"))
-            {
-                StopAllMusic();
-                Play("Day 1 & Day 2");
-            }
-        }
+        // else if (persistentGroupB.Contains(scene.name))
+        // {
+        //     if (!IsPlaying("Day 1 & Day 2"))
+        //     {
+        //         StopAllMusic();
+        //         Play("Day 1 & Day 2");
+        //     }
+        // }
         else
         {
             // For any scene not in Group A or B, stop all music.
@@ -77,6 +77,10 @@ public class AudioManager : MonoBehaviour
             if (scene.name == "Credits")
             {
                 Play("Credits");
+            }
+            if (scene.name == "Day 1" || scene.name == "Day 2" || scene.name == "Day 3")
+            {
+                Play("Restaurant Music");
             }
         }
     }
