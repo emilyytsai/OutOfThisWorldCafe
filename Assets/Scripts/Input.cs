@@ -143,6 +143,7 @@ public class InputHandler : MonoBehaviour
 
     void enable_pink()
     {
+        disable_scoop();
         if (pink_cup != null)
         {
             pink_cup.SetActive(true);
@@ -151,6 +152,7 @@ public class InputHandler : MonoBehaviour
 
     void enable_blue()
     {
+        disable_scoop();
         if (blue_cup != null)
         {
             blue_cup.SetActive(true);
@@ -159,6 +161,7 @@ public class InputHandler : MonoBehaviour
 
     void enable_green()
     {
+        disable_scoop();
         if (green_cup != null)
         {
             green_cup.SetActive(true);
@@ -167,6 +170,7 @@ public class InputHandler : MonoBehaviour
 
     void enable_purple()
     {
+        disable_scoop();
         if (purple_cup != null)
         {
             purple_cup.SetActive(true);
@@ -195,5 +199,14 @@ public class InputHandler : MonoBehaviour
         {
             candies.SetActive(true);
         }
+    }
+
+    //only one scoop can appear at a time
+    void disable_scoop()
+    {
+        if (pink_cup != null) pink_cup.SetActive(false);
+        if (blue_cup != null) blue_cup.SetActive(false);
+        if (green_cup != null) green_cup.SetActive(false);
+        if (purple_cup != null) purple_cup.SetActive(false);
     }
 }
