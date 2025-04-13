@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Input : MonoBehaviour
+public class InputHandler : MonoBehaviour
 {
     private Camera _mainCamera;
 

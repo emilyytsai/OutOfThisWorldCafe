@@ -10,11 +10,8 @@ public class ChangeScene : MonoBehaviour
     private AudioManager audio_manager;
     [SerializeField] RectTransform fader;
 
-    //to stop the star glow particle effect during the salad transition
-    //hide the salad sprite as well
-    public GameObject star_glow_effect;
-    public GameObject galaxy_glow_effect;
-    public GameObject title_glow_effect;
+    //disable title
+    public GameObject title;
 
     // Left & Right Curtain Transition
     public RectTransform left_curtain;
@@ -52,10 +49,8 @@ public class ChangeScene : MonoBehaviour
         // This is the function you'll attach to your button OnClick.
         StartCoroutine(WaitAndChangeScene());
 
-        //stop the moon/sun glow effect
-        StartCoroutine(stop_star_glow());
-        StartCoroutine(stop_galaxy_glow());
-        StartCoroutine(stop_title_glow());
+        //disable title
+        StartCoroutine(stop_title());
     }
 
     public void OpenScene()
@@ -99,34 +94,14 @@ public class ChangeScene : MonoBehaviour
 
     }
 
-    //add a slight delay before the glow effect is stopped
-    public IEnumerator stop_star_glow()
+    //add a slight delay before title is disabled
+    public IEnumerator stop_title()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.1f);
         
-        if (star_glow_effect != null)
+        if (title != null)
         {
-            star_glow_effect.SetActive(false);
-        }
-    }
-
-    public IEnumerator stop_galaxy_glow()
-    {
-        yield return new WaitForSeconds(0.4f);
-        
-        if (galaxy_glow_effect != null)
-        {
-            star_glow_effect.SetActive(false);
-        }
-    }
-
-        public IEnumerator stop_title_glow()
-    {
-        yield return new WaitForSeconds(0.4f);
-        
-        if (title_glow_effect != null)
-        {
-            star_glow_effect.SetActive(false);
+            title.SetActive(false);
         }
     }
 
