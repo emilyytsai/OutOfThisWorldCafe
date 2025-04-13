@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     // Group A persistent scenes: these scenes share one persistent track.
-    public string[] persistentGroupA = { "Main Menu", "Dialogue 1" };
+    public string[] persistentGroupA = { "Main Menu", "Day 1 Dialogue" };
 
     // Group B persistent scenes: these scenes share another persistent track.
     public string[] persistentGroupB = { "Day 1", "Day 2" };
@@ -54,19 +54,19 @@ public class AudioManager : MonoBehaviour
         // If the loaded scene is part of persistent Group A,
         if (persistentGroupA.Contains(scene.name))
         {
-            if (!IsPlaying("Main & Game Obj")) //**see sounds list in the inspector
+            if (!IsPlaying("Main & Day 1 Dialogue")) //**see sounds list in the inspector
             {
                 StopAllMusic();
-                Play("Main & Game Obj");
+                Play("Main & Day 1 Dialogue");
             }
         }
         // If the loaded scene is part of persistent Group B,
         else if (persistentGroupB.Contains(scene.name))
         {
-            if (!IsPlaying("Farm & Kitchen"))
+            if (!IsPlaying("Day 1 & Day 2"))
             {
                 StopAllMusic();
-                Play("Farm & Kitchen");
+                Play("Day 1 & Day 2");
             }
         }
         else
