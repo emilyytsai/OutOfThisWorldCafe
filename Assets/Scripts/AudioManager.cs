@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     // Group A persistent scenes: these scenes share one persistent track.
-    public string[] persistentGroupA = { "Main Menu", "Intro Dialogue" };
+    public string[] persistentGroupA = { "Main Menu", "Intro Dialogue", "Day 1 Dialogue", "Day 2 Dialogue", "Day 3 Dialogue" };
 
     // // Group B persistent scenes: these scenes share another persistent track.
     // public string[] persistentGroupB = { "Day 1", "Day 2" };

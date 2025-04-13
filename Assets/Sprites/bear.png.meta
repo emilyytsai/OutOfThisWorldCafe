@@ -103,12 +103,12 @@ TextureImporter:
       name: bear_0
       rect:
         serializedVersion: 2
-        x: 706
-        y: 508
-        width: 235
-        height: 337
+        x: 678
+        y: 561
+        width: 292
+        height: 401
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ab6e9ed97e435e54ca33f39fa6d88fdd
     internalID: 0
     vertices: []
     indices: 

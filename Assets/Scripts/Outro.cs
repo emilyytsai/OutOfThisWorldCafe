@@ -9,6 +9,12 @@ public class Outro : MonoBehaviour
     private Queue<string> dialogueQueue;
     private bool dialogueStarted = false;
 
+    [SerializeField]
+    private GameObject continue_button = null;
+
+    [SerializeField]
+    private GameObject continue_text = null;
+
     void Start()
     {
         dialogueQueue = new Queue<string>();
@@ -18,6 +24,7 @@ public class Outro : MonoBehaviour
 
         DisplayNextLine();
         dialogueStarted = true;
+        continue_button.SetActive(false);
     }
 
     void Update()
@@ -37,7 +44,8 @@ public class Outro : MonoBehaviour
         }
         else
         {
-            dialogueText.text = "";
+            continue_button.SetActive(true);
+            continue_text.SetActive(false);
             dialogueStarted = false;
         }
     }
