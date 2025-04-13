@@ -1140,6 +1140,8 @@ GameObject:
   - component: {fileID: 979317045}
   - component: {fileID: 979317047}
   - component: {fileID: 979317046}
+  - component: {fileID: 979317048}
+  - component: {fileID: 979317049}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -1231,6 +1233,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &979317048
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979317044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4849c6d5fab4af54c8eadce344ceeb56, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &979317049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979317044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eae5ac795452a840afff2388964d51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 979317048}
+  animal: {fileID: 979317044}
+  animal_sprite: {fileID: 979317047}
+  animal_sprites:
+  - {fileID: 1075993247170539406, guid: ab885664710ff814b8eaea8459fad44d, type: 3}
+  - {fileID: -5237074582503671387, guid: 36bd2d60b2e65774da1aec5263f2ed57, type: 3}
+  serve_button: {fileID: 1678021045}
+  Name: Day 1 Dialogue
 --- !u!1 &1008192033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,7 +2617,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2127121081510020967, guid: d9790ff641eb557419ef9f98c65a0ed6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3022,7 +3066,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -578604217755468996, guid: d36cfced7570b0e42ab0627cc5f3410e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
