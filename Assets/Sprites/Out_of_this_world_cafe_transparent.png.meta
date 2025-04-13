@@ -559,7 +559,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Out_of_this_world_cafe_transparent_0: 1215397720795976067
+      Out_of_this_world_cafe_transparent_1: -5895556103596893708
+      Out_of_this_world_cafe_transparent_10: -333425174956081845
+      Out_of_this_world_cafe_transparent_11: -4345691804085561744
+      Out_of_this_world_cafe_transparent_12: -7111894015904845870
+      Out_of_this_world_cafe_transparent_13: 2437077985159976296
+      Out_of_this_world_cafe_transparent_14: 8381551195404897548
+      Out_of_this_world_cafe_transparent_15: -8798255268267311555
+      Out_of_this_world_cafe_transparent_16: 1879241750584764190
+      Out_of_this_world_cafe_transparent_17: 1547283793989398820
+      Out_of_this_world_cafe_transparent_2: -8042764884630941370
+      Out_of_this_world_cafe_transparent_3: 4489281853492127351
+      Out_of_this_world_cafe_transparent_4: 450281183834703003
+      Out_of_this_world_cafe_transparent_5: 4488587663330689798
+      Out_of_this_world_cafe_transparent_6: -5054704063113305241
+      Out_of_this_world_cafe_transparent_7: -8128614173478877923
+      Out_of_this_world_cafe_transparent_8: -2794903147953508685
+      Out_of_this_world_cafe_transparent_9: 3221505428096124178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

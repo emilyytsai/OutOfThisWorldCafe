@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Out of this world cafe_0: 4473193743685988691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
