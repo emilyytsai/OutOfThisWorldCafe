@@ -3,7 +3,7 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
-public class SceneDialogueTMP : MonoBehaviour
+public class Dialogue2 : MonoBehaviour
 {
     public TMP_Text dialogueText;
     public float delayBetweenLines = 10f;
@@ -14,7 +14,7 @@ public class SceneDialogueTMP : MonoBehaviour
     {
         dialogueQueue = new Queue<string>();
 
-        dialogueQueue.Enqueue("Bunny is jumping for joy for his ice cream!");
+        dialogueQueue.Enqueue("Dog: Bunny is jumping for joy for his ice cream!");
         dialogueQueue.Enqueue("You’ve unlocked Purple Ice Cream and Sun Candy Toppers!");
         dialogueQueue.Enqueue("Woof, We’re so hungry, help us get our treats so we can go home!");
         dialogueQueue.Enqueue("The Pidges need more dessert.");

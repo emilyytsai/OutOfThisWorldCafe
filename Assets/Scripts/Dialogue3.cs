@@ -3,7 +3,7 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
-public class SceneDialogueTMP : MonoBehaviour
+public class Dialogue3 : MonoBehaviour
 {
     public TMP_Text dialogueText;
     public float delayBetweenLines = 10f;
