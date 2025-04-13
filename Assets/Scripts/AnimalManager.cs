@@ -73,7 +73,7 @@ public class AnimalManager : MonoBehaviour
 
             if (!has_flavor)
             {
-                request_text.text = "You gave me... nothing?! How could you do this...";
+                request_text.text = "You gave me... no ice cream?! How could you do this...";
             }
             else if (given_flavor == desired_flavor)
             {
