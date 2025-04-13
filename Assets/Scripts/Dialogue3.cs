@@ -20,7 +20,7 @@ public class SceneDialogueTMP : MonoBehaviour
         delayBetweenLines = 20f;
         dialogueQueue.Enqueue("And the Pidges went home satisfied, and they were happy with the best ice cream in the galaxy.");
         delayBetweenLines = 10f;
-        dialogueQueue.Enqueue("Capybara: “We’re coming back here for sure!”")
+        dialogueQueue.Enqueue("Capybara: “We’re coming back here for sure!”");
 
         StartCoroutine(PlayDialogue());
     }
