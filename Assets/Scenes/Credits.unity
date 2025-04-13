@@ -2194,9 +2194,7 @@ MonoBehaviour:
   Name: Main Menu
   audio_manager: {fileID: 0}
   fader: {fileID: 0}
-  star_glow_effect: {fileID: 0}
-  galaxy_glow_effect: {fileID: 0}
-  title_glow_effect: {fileID: 0}
+  title: {fileID: 0}
   left_curtain: {fileID: 1768224731}
   right_curtain: {fileID: 1257348314}
   slide_distance: 1920

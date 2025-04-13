@@ -15,6 +15,9 @@ public class InputHandler : MonoBehaviour
     public GameObject blue_cup = null;
     public GameObject green_cup = null;
     public GameObject purple_cup = null;
+    public GameObject rainbow = null;
+    public GameObject white = null;
+    public GameObject candies = null;
 
     private void Awake()
     {
@@ -42,7 +45,7 @@ public class InputHandler : MonoBehaviour
             return;
         }
 
-        //scoop selection
+        //scoop/topping selection
         if (selected_object.CompareTag("scoop"))
         {
             if (last_selected == selected_object)
@@ -88,6 +91,9 @@ public class InputHandler : MonoBehaviour
         }
     }
 
+/////////////////////////////////////////////////
+//adding scoops/toppings logic 
+
     public void AddscoopTocup(GameObject scoop)
     {
         if (scoop != null && cup != null) // If scoop and cup are assigned and contain references to GameObjects
@@ -116,6 +122,18 @@ public class InputHandler : MonoBehaviour
 
             case "Purple":
                 enable_purple();
+                break;
+
+            case "Rainbow":
+                enable_rainbow();
+                break;
+
+            case "White":
+                enable_white();
+                break;
+
+            case "Candies":
+                enable_candies();
                 break;
 
             default:
@@ -152,6 +170,30 @@ public class InputHandler : MonoBehaviour
         if (purple_cup != null)
         {
             purple_cup.SetActive(true);
+        }
+    }
+
+    void enable_rainbow()
+    {
+        if (rainbow != null)
+        {
+            rainbow.SetActive(true);
+        }
+    }
+
+    void enable_white()
+    {
+        if (white != null)
+        {
+            white.SetActive(true);
+        }
+    }
+
+    void enable_candies()
+    {
+        if (candies != null)
+        {
+            candies.SetActive(true);
         }
     }
 }
