@@ -31,6 +31,6 @@ We would add an endless party mode where the user had 3 lives, meaning the user 
 Overall, we will use all of the skills we learned in our first hackathon and create new projects outside of school using the skills we learned.
 
 ## Check It Out
-- [View our submission on Devpost](https://devpost.com/software/out-of-this-world-cafe?_gl=1*q7ws37*_gcl_au*MjAxMTczMDExNC4xNzQ0NTk2NTEy*_ga*NDc2NTI1MTQyLjE3MzM5NjU4ODE.*_ga_0YHJK3Y10M*MTc0NDcyNzU5Ni4zLjEuMTc0NDcyNzY0MC4wLjAuMA..)
+- [View our Submission on Devpost](https://devpost.com/software/out-of-this-world-cafe?_gl=1*q7ws37*_gcl_au*MjAxMTczMDExNC4xNzQ0NTk2NTEy*_ga*NDc2NTI1MTQyLjE3MzM5NjU4ODE.*_ga_0YHJK3Y10M*MTc0NDcyNzU5Ni4zLjEuMTc0NDcyNzY0MC4wLjAuMA..)
 - [LinkedIn Post by FullyHacks Showcasing the Winners](https://www.linkedin.com/posts/fullyhacks_fullyhacks-fullyhacks2025-acm-activity-7317686445756817409-8a0P)
 - [Watch our Video Demo](https://vimeo.com/1075136877)
