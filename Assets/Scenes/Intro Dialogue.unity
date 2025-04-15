@@ -584,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 206316068}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.994, y: -2.2627, z: 190.11551}
+  m_LocalPosition: {x: -6.59, y: -1.09, z: 190.11551}
   m_LocalScale: {x: 0.7572205, y: 0.82272667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1277,7 +1277,7 @@ Transform:
   m_GameObject: {fileID: 1087136446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.44, y: -2.39, z: 190.11551}
+  m_LocalPosition: {x: 6.89, y: -1.26, z: 190.11551}
   m_LocalScale: {x: 0.8036211, y: 0.82043916, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2050,6 +2050,7 @@ MonoBehaviour:
   audio_manager: {fileID: 0}
   fader: {fileID: 848694052}
   title: {fileID: 0}
+  dog: {fileID: 0}
   left_curtain: {fileID: 0}
   right_curtain: {fileID: 0}
   slide_distance: 1920

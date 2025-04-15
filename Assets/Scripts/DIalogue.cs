@@ -31,7 +31,7 @@ public class Dialogue : MonoBehaviour
         dialogueQueue.Enqueue("Dog: Wait it looks like you just opened an ice cream cafe here in space?!");
         dialogueQueue.Enqueue("Dog: Woof, We’re so hungry. Help us get some treats, and maybe we will go home with you!");
         dialogueQueue.Enqueue("Serve some treats to the ice cream deprived animals. ");
-        dialogueQueue.Enqueue("Click on the flavor, then click on the cup to add the ice cream scoop. Note: these animals aren't picky about their toppings. Have fun!");
+        dialogueQueue.Enqueue("HOW TO PLAY: \n\nWhen you get to the cafe, click on the flavor, then click on the cup to add the ice cream scoop. \n\nNOTE: these animals aren't picky about their toppings. Have fun!\n\n\n");
 
         DisplayNextLine();
         dialogueStarted = true;
@@ -52,11 +52,12 @@ public class Dialogue : MonoBehaviour
         {
             string line = dialogueQueue.Dequeue();
             dialogueText.text = line;
-            if (line.Contains("ice cream deprived animals") || line.Contains("on the flavor"))
+            if (line.Contains("on the flavor"))
             {
                 ice_cream1.SetActive(true);
                 ice_cream2.SetActive(true);
                 dog.SetActive(false);
+                continue_button.SetActive(true);
             }
         }
         else
