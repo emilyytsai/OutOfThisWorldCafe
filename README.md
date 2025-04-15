@@ -1,6 +1,6 @@
 # Out of this World Cafe
 
-Out of this World Cafe was developed during the hackathon, **Fullyhacks 2025**, at California State University, Fullerton on April 12, 2025 - April 13, 2025, with over 4,000 participants, and won **Best Game Project**. 
+Out of this World Cafe was developed during the hackathon, **Fullyhacks 2025**, at California State University, Fullerton on April 12, 2025 - April 13, 2025, with over 400 participants, and won **Best Game Project**. 
 
 ## Our Team
 * Dianella Sy - Programmer, Audio/Transition Manager
@@ -14,7 +14,7 @@ We got inspiration from posts we saw on Pinterest of animal drawings, and we wan
 Out of this World Cafe is a restaurant tycoon video game where different animals are sent to space and stranded for a period of time. In order for them to return to Earth, they must be served ice cream, and if they are satisfied, they will decide to return with the cafe owner back home. 
 
 ## How We Built It
-We developed the game utilizing C#, and our IDEs are Unity and Visual Studio Code. We also used GitHub Desktop, where we all contributed to the GitHub repository.
+We developed the game utilizing C#, Unity Version 6000.0.42f1, and Visual Studio Code. We also used GitHub Desktop for version control and merge conflict resolution.
 
 ## Challenges We Ran Into
 There were problems with getting the input handler fully working. We imported an asset in Unity's Asset Store called LeanTween, which enabled us to make transitions smoothly without having to utilize the Animator in Unity. However, there were some conflicts with the function name we called in the dialogue scripts, and LeanTween said it did not recognize the function, but it was not coming from there. In the end, we fixed the compiler issues and both LeanTween and the dialogue work.
