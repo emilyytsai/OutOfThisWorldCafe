@@ -26,7 +26,7 @@ This is our first hackathon, and we are so proud of ourselves that we completed 
 We developed our technical skills on how to build a completed game in Unity and the different components in the IDE. In addition, we also developed our soft skills, where we gained experience in teamwork, problem-solving, and rapid prototyping.
 
 ## What's Next for Out of this World Cafe
-We are planning to add an endless party mode in addition to the current story mode we have implemented. The user must serve the animals the correct ice cream and toppings in a certain amount of time until the run of out lives/attempts.
+We are planning to add an endless party mode in addition to the current story mode we have implemented. The user must serve the animals the correct ice cream and toppings in a certain amount of time until they run out of lives/attempts.
 
 ## Check It Out
 - [View our Submission on Devpost](https://devpost.com/software/out-of-this-world-cafe?_gl=1*q7ws37*_gcl_au*MjAxMTczMDExNC4xNzQ0NTk2NTEy*_ga*NDc2NTI1MTQyLjE3MzM5NjU4ODE.*_ga_0YHJK3Y10M*MTc0NDcyNzU5Ni4zLjEuMTc0NDcyNzY0MC4wLjAuMA..)
