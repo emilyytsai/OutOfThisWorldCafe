@@ -1733,7 +1733,7 @@ MonoBehaviour:
   animator: {fileID: 662834408}
   animal: {fileID: 662834405}
   animal_sprite: {fileID: 662834410}
-  cup: {fileID: 0}
+  cup: {fileID: 895759950}
   request_text: {fileID: 876093506}
   animal_sprites:
   - {fileID: -5237074582503671387, guid: 36bd2d60b2e65774da1aec5263f2ed57, type: 3}
