@@ -28,10 +28,9 @@ public class Dialogue2 : MonoBehaviour
     {
         dialogueQueue = new Queue<string>();
 
-        dialogueQueue.Enqueue("Dog: Bunny is jumping for joy for his ice cream!");
-        dialogueQueue.Enqueue("You’ve unlocked Purple Ice Cream and Sun Candy Toppers!");
-        dialogueQueue.Enqueue("Dog: Woof, We’re so hungry, help us get our treats so we can go home!");
-        dialogueQueue.Enqueue("The Pidges need more dessert.");
+        dialogueQueue.Enqueue("Dog: Bear is jumping for joy! You've really left a mark on these animals.");
+        dialogueQueue.Enqueue("You’ve unlocked: Galactic Grape Ice Cream and Earth & Sun Candies!");
+        dialogueQueue.Enqueue("Dog: Woof, we're not done just yet. I'm bringing back all my animal friends for one more round of ice cream.");
 
         DisplayNextLine();
         dialogueStarted = true;
