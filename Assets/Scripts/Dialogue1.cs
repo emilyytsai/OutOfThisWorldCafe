@@ -19,8 +19,11 @@ public class Dialogue1 : MonoBehaviour
     private GameObject ice_cream1 = null;
     [SerializeField]
     private GameObject ice_cream2 = null;
+
     [SerializeField]
     private GameObject dog = null;
+    [SerializeField]
+    private GameObject human = null;
 
     void Start()
     {
@@ -55,12 +58,22 @@ public class Dialogue1 : MonoBehaviour
             {
                 ice_cream1.SetActive(true);
                 ice_cream2.SetActive(true);
+                human.SetActive(false);
                 dog.SetActive(false);
             }
-            else
+            else if (line.Contains("Dog:"))
             {
                 ice_cream1.SetActive(false);
                 ice_cream2.SetActive(false);
+                human.SetActive(false);
+                dog.SetActive(true);
+            }
+            else if (line.Contains("Me:"))
+            {
+                ice_cream1.SetActive(false);
+                ice_cream2.SetActive(false);
+                dog.SetActive(false);
+                human.SetActive(true);
             }
         }
         else
@@ -70,6 +83,7 @@ public class Dialogue1 : MonoBehaviour
             dialogueStarted = false;
             ice_cream1.SetActive(false);
             ice_cream2.SetActive(false);
+            human.SetActive(false);
             dog.SetActive(true);
         }
     }

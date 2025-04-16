@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 462f36a66afd81240806299ca710467c
+guid: 38aaa76ed1a2e1844bf21022a95cd0b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4473193743685988691
-    second: Out of this world cafe_0
+      213: 6362290972351372809
+    second: astronaut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Out of this world cafe_0
+      name: astronaut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1080
-        height: 1080
+        x: 671
+        y: 507
+        width: 294
+        height: 389
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35137e7820af31e30800000000000000
-      internalID: 4473193743685988691
+      spriteID: 90e9da43ee56b4850800000000000000
+      internalID: 6362290972351372809
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Out of this world cafe_0: 4473193743685988691
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

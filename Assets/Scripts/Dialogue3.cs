@@ -11,15 +11,18 @@
 
         [SerializeField]
         private GameObject continue_button = null;
-
         [SerializeField]
         private GameObject continue_text = null;
+
         [SerializeField]
         private GameObject dog = null;
         [SerializeField]
         private GameObject cat = null;
+
         [SerializeField]
         private GameObject heart = null;
+        [SerializeField]
+        private GameObject polaroid = null;
 
 
         void Start()
@@ -54,6 +57,13 @@
                 if (line.Contains("Meow!"))
                 {
                     cat.SetActive(true);
+                }
+                else
+                {
+                    dialogueQueue.Enqueue(" ");
+                    polaroid.SetActive(true);
+                    dog.SetActive(false);
+                    cat.SetActive(false);
                 }
             }
             else
