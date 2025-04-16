@@ -58,6 +58,13 @@ public class Dialogue2 : MonoBehaviour
                 dog.SetActive(false);
                 bear.SetActive(false);
             }
+            else if (line.Contains("just yet"))
+            {
+                ice_cream1.SetActive(false);
+                ice_cream2.SetActive(false);
+                dog.SetActive(true);
+                bear.SetActive(true);
+            }
             else
             {
                 ice_cream1.SetActive(false);
