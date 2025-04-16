@@ -29,7 +29,7 @@ public class Dialogue2 : MonoBehaviour
         dialogueQueue = new Queue<string>();
 
         dialogueQueue.Enqueue("Dog: Bear is jumping for joy! You've really left a mark on these animals.");
-        dialogueQueue.Enqueue("You’ve unlocked: Galactic Grape Ice Cream and Earth & Sun Candies!");
+        dialogueQueue.Enqueue("<b>You’ve unlocked:</b>  <color=#dcbeff>Galactic Grape Ice Cream</color=#dcbeff> and <color=#beddff>Earth</color=#beddff> & <color=#fff19b>Sun</color=#fff19b> Candies!");
         dialogueQueue.Enqueue("Dog: Woof, we're not done just yet. I'm bringing back all my animal friends for one more round of ice cream.");
 
         DisplayNextLine();

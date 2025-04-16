@@ -31,7 +31,7 @@ public class Dialogue1 : MonoBehaviour
 
         // Add dialogue lines
         dialogueQueue.Enqueue("Dog: Nice job! Cat and Rat enjoyed visiting your ice cream cafe.");
-        dialogueQueue.Enqueue("You’ve unlocked: Blue Giant Blueberry Ice Cream and White Star Sprinkles!");
+        dialogueQueue.Enqueue("<b>You’ve unlocked:</b>  <color=#beddff>Blue Giant Blueberry Ice Cream</color=#beddff> and <u>White Star Sprinkles</u>!");
         dialogueQueue.Enqueue("Me: Wait I hear more animals coming in…");
         dialogueQueue.Enqueue("Dog: My turn to get some ice cream! Woof.");
 

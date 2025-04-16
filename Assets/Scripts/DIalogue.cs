@@ -37,7 +37,7 @@ public class Dialogue : MonoBehaviour
         dialogueQueue.Enqueue("Dog: Wait it looks like you just opened an ice cream cafe here in space?!");
         dialogueQueue.Enqueue("Dog: Woof, we’re so hungry. Help us get some treats, and maybe we will go home with you!");
         dialogueQueue.Enqueue("Serve some treats to the ice cream deprived animals. \n\n\n\n\n\n\n\n");
-        dialogueQueue.Enqueue("HOW TO PLAY: \n\nWhen you get to the cafe, click on the flavor, then click on the cup to add the ice cream scoop. \n\nNOTE: these animals aren't picky about their toppings. Have fun!\n\n\n");
+        dialogueQueue.Enqueue("<b><u><color=#beddff>HOW TO PLAY:</color=#beddff></u></b> \n\nWhen you get to the cafe, click on the flavor, then click on the cup to add the ice cream scoop. \n\n<b><color=#beddff>NOTE:</color=#beddff></b>  These animals aren't picky about their toppings. Have fun!\n\n\n");
 
         DisplayNextLine();
         dialogueStarted = true;

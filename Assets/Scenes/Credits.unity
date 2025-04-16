@@ -263,8 +263,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.562, y: -263}
-  m_SizeDelta: {x: 1324.79, y: 230.74}
+  m_AnchoredPosition: {x: 30, y: -268.9}
+  m_SizeDelta: {x: 1187.35, y: 230.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97393126
 MonoBehaviour:
@@ -286,11 +286,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "    Programmer, \t\t\t         Programmer, Artist\nAudio/Transition \t\t\t\t\t 
-    Writer\n      Manager\n\n\n"
+  m_text: "   Programmer, \t\t\t                  Programmer, Artist\nAudio/Transition
+    \t\t\t\t\t Writer\n      Manager\n\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -787,8 +787,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 185}
-  m_SizeDelta: {x: 530.8, y: 172.1}
+  m_AnchoredPosition: {x: 0, y: 120}
+  m_SizeDelta: {x: 495.51, y: 172.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316347450
 MonoBehaviour:
@@ -812,8 +812,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1368,7 +1368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.57, y: -406.23846}
+  m_AnchoredPosition: {x: 7, y: -406.23846}
   m_SizeDelta: {x: 529.1648, y: 43.9456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816489620
@@ -1393,8 +1393,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Programmer, Writer
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1591,8 +1591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54, y: -192}
-  m_SizeDelta: {x: 1285.666, y: 230.7351}
+  m_AnchoredPosition: {x: 0, y: -192}
+  m_SizeDelta: {x: 1164.23, y: 230.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947847916
 MonoBehaviour:
@@ -1616,8 +1616,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Dianella Sy\t\t      Emily Tsai   "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2429,8 +2429,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2927,7 +2927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: -342.87}
+  m_AnchoredPosition: {x: 7, y: -342.87}
   m_SizeDelta: {x: 515.54, y: 71.004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106407662
@@ -2952,8 +2952,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lukas Lin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
-  m_sharedMaterial: {fileID: 3556532713179519876, guid: 0b5cefed07acc9d42b5f9da923e036cb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
+  m_sharedMaterial: {fileID: -7553140052100579813, guid: e48c0aa55eeccd345a6182160f60b198, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

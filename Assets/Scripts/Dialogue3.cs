@@ -35,7 +35,7 @@
             dialogueQueue.Enqueue("Cat: Meow!");
             dialogueQueue.Enqueue("Dog: Woof, we have decided we are coming home with you. Thank you for serving us treats.");
             dialogueQueue.Enqueue("So the animals went home satisfied with their new owner, and they were happy with the best ice cream in the galaxy!");
-            dialogueQueue.Enqueue("\n\nThis journey was  <b><u><color=#A70002>Out Of This World</color=#A70002></b></u>  for sure!");
+            dialogueQueue.Enqueue("\n\nThis journey was <b><u><color=#A70002>Out of This World</color=#A70002></b></u> for sure!");
 
             DisplayNextLine();
             dialogueStarted = true;

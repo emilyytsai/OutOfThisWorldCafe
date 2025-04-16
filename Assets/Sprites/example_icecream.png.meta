@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: de75dcfa0c246a74fba253a2465db3be
+guid: 8e850e1172d150248978402c40bb46fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6921130654863852129
-    second: ice_cream_0
+      213: 3500804508998542064
+    second: example_icecream_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ice_cream_0
+      name: example_icecream_0
       rect:
         serializedVersion: 2
-        x: 84
-        y: 51
-        width: 433
-        height: 648
+        x: 185
+        y: 71
+        width: 887
+        height: 1409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9df5c0d65433ff90800000000000000
-      internalID: -6921130654863852129
+      spriteID: 0f2a1f2272b559030800000000000000
+      internalID: 3500804508998542064
       vertices: []
       indices: 
       edges: []

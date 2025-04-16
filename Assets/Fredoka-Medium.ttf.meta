@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f12ad94ea33535249af281e0d842cc40
+guid: b598633f971bafa4ba4b503f0f71ad40
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Bubbleboddy Neue Trial
+  - Fredoka
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
