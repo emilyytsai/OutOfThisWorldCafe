@@ -20,7 +20,9 @@
         private GameObject cat = null;
 
         [SerializeField]
-        private GameObject heart = null;
+        private GameObject heart1 = null;
+        [SerializeField]
+        private GameObject heart2 = null;
         [SerializeField]
         private GameObject polaroid = null;
 
@@ -33,7 +35,7 @@
             dialogueQueue.Enqueue("Cat: Meow!");
             dialogueQueue.Enqueue("Dog: Woof, we have decided we are coming home with you. Thank you for serving us treats.");
             dialogueQueue.Enqueue("So the animals went home satisfied with their new owner, and they were happy with the best ice cream in the galaxy!");
-            dialogueQueue.Enqueue("This journey was  <b><u><color=#A70002>Out Of This World</color=#A70002></b></u>  for sure!");
+            dialogueQueue.Enqueue("\n\nThis journey was  <b><u><color=#A70002>Out Of This World</color=#A70002></b></u>  for sure!");
 
             DisplayNextLine();
             dialogueStarted = true;
@@ -58,12 +60,9 @@
                 {
                     cat.SetActive(true);
                 }
-                else
+                else if (line.Contains("for sure"))
                 {
-                    dialogueQueue.Enqueue(" ");
-                    polaroid.SetActive(true);
-                    dog.SetActive(false);
-                    cat.SetActive(false);
+                    heart1.SetActive(true);
                 }
             }
             else
@@ -73,7 +72,10 @@
                 dialogueStarted = false;
                 dog.SetActive(true);
                 cat.SetActive(true);
-                heart.SetActive(true);
+                heart2.SetActive(true);
+
+                dialogueText.text = "";
+                polaroid.SetActive(true);
             }
         }
     }
