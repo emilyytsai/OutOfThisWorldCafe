@@ -390,6 +390,7 @@ RectTransform:
   - {fileID: 540319532}
   - {fileID: 2146161485}
   - {fileID: 450567275}
+  - {fileID: 196360616}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -461,15 +462,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196360613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.00926, y: 0.00926, z: 0.00926}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 134514033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5420001, y: 0.5}
   m_AnchorMax: {x: 0.5420001, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000018367062, y: 1.3518519}
+  m_AnchoredPosition: {x: -80.64, y: 146}
   m_SizeDelta: {x: 5220.42, y: 3990}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &209324588
@@ -914,7 +915,7 @@ MonoBehaviour:
   audio_manager: {fileID: 0}
   fader: {fileID: 196360616}
   title: {fileID: 0}
-  dog: {fileID: 0}
+  dog: {fileID: 764057459}
   left_curtain: {fileID: 0}
   right_curtain: {fileID: 0}
   slide_distance: 1920
@@ -2567,4 +2568,3 @@ SceneRoots:
   - {fileID: 982992915}
   - {fileID: 1926352157}
   - {fileID: 1212610450}
-  - {fileID: 196360616}
