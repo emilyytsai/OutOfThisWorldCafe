@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 751399a455a35d645a64305011620f56
+guid: 2eddfcc21af9f5943a2fc0e657ad4808
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7830357519817884352
-    second: polaroid1_0
+      213: 1138012483915294380
+    second: polaroid1 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: polaroid1_0
+      name: polaroid1 1_0
       rect:
         serializedVersion: 2
         x: 918
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c2cd016da40bac60800000000000000
-      internalID: 7830357519817884352
+      spriteID: ca62bbd13580bcf00800000000000000
+      internalID: 1138012483915294380
       vertices: []
       indices: 
       edges: []
