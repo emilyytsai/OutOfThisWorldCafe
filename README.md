@@ -12,8 +12,8 @@ Out of this World Cafe was developed during the hackathon, **FullyHacks 2025**, 
 * Lukas Lin - Programmer, Writer
 
 ## Game Preview
-![Main Menu   Dialogue](https://github.com/user-attachments/assets/26a5d755-427b-4ac0-bbaa-3318e886809e)
-![Cafe](https://github.com/user-attachments/assets/e7dce7d1-2ad6-4c91-8f47-270ac50d49b0)
+<img src="https://github.com/user-attachments/assets/26a5d755-427b-4ac0-bbaa-3318e886809e" height="192" width="108">
+<img src="https://github.com/user-attachments/assets/e7dce7d1-2ad6-4c91-8f47-270ac50d49b0" height="192" width="108">
 
 ## Inspiration
 We got inspiration from posts we saw on Pinterest of animal drawings, and we wanted to draw a similar style of animals and implement them in a space game. After learning the space theme in the opening ceremony, we thought of animals being stranded in space and having to rescue them by winning over their hearts with ice cream (we were craving ice cream, and who doesn't love ice cream!). We also wanted to address issues of animal cruelty and animal abandonment, as our game represents ensuring every animal is given a loving home and is properly taken care of.
