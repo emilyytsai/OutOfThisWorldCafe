@@ -3,7 +3,8 @@
 Out of this World Cafe was developed during the hackathon, **FullyHacks 2025**, at California State University, Fullerton on April 12, 2025 - April 13, 2025, with over 400 participants, and won **Best Game Project**. 
 
 ## Check It Out
-- [Watch our Video Demo](https://youtu.be/ShiuO1t1tdo)
+- [Watch our Game Trailer](https://www.youtube.com/watch?v=f1APMdSfkBo)
+- [Watch our Video Demo (Full Gameplay)](https://youtu.be/ShiuO1t1tdo)
 - [LinkedIn Post by FullyHacks Showcasing the Winners](https://www.linkedin.com/posts/fullyhacks_fullyhacks-fullyhacks2025-acm-activity-7317686445756817409-8a0P)
 
 ## Our Team
