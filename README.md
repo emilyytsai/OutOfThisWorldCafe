@@ -11,6 +11,7 @@ Out of this World Cafe was developed during the hackathon, **FullyHacks 2025**, 
 * Dianella Sy - Programmer, Audio/Transition Manager
 * Emily Tsai - Programmer, Artist, Writer
 * Lukas Lin - Programmer, Writer
+<img src="https://github.com/user-attachments/assets/db30c680-4f84-4f7b-b93f-15e828ab47c9" height="120" width="100"><img src="https://github.com/user-attachments/assets/ead09ae1-ef08-4f74-950e-ed10686ae894" height="120" width="100"><img src="https://github.com/user-attachments/assets/8888084b-247f-4ea5-8c2b-7b8ee9b1910a" height="120" width="100">
 
 ## Game Preview
 <img src="https://github.com/user-attachments/assets/26a5d755-427b-4ac0-bbaa-3318e886809e" height="216" width="384">
