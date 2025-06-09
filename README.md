@@ -34,7 +34,7 @@ There were problems with getting the input handler to fully work, which were res
 This is our first hackathon, and we are so proud of ourselves that we completed a project in less than 24 hours!
 
 ## What We Learned
-We developed our technical skills on how to build a completed game in Unity and the different components in the IDE. In addition, we also developed our soft skills, where we gained experience in teamwork, problem-solving, and rapid prototyping.
+We developed our technical skills on how to build a completed game in Unity and the different components in the IDE. In addition, we also developed our soft skills, where we gained some experience in teamwork, problem-solving, and rapid prototyping.
 
 ## What's Next for Out of this World Cafe
 We are planning to add an endless party mode in addition to the current story mode we have implemented. The user must serve the animals the correct ice cream and toppings in a certain amount of time until they run out of lives/attempts.
